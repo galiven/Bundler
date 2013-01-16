@@ -451,7 +451,7 @@ function compileLess(lessCss, lessPath, cb) {
             paths: ['.', lessDir], // Specify search paths for @import directives
             filename: fileName
         };
-    
+
     less.render(lessCss, options, function (err, css) {
         if (err) throw err;
         cb(css);
