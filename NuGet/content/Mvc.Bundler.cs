@@ -140,7 +140,7 @@ namespace ServiceStack.Mvc
 				return MvcHtmlString.Empty;
 
 			if (href.StartsWith("~/"))
-				href = href.Replace("~/", VirtualPathUtility.ToAbsolute("~"));
+				href = href.Replace("~/", VirtualPathUtility.ToAbsolute("~/"));
 
 			var tag = new TagBuilder("link");
 			tag.MergeAttribute("rel", rel);
@@ -171,7 +171,7 @@ namespace ServiceStack.Mvc
 				return MvcHtmlString.Empty;
 
 			if (src.StartsWith("~/"))
-				src = src.Replace("~/", VirtualPathUtility.ToAbsolute("~"));
+				src = src.Replace("~/", VirtualPathUtility.ToAbsolute("~/"));
 
 			var tag = new TagBuilder("img");
 
@@ -197,7 +197,7 @@ namespace ServiceStack.Mvc
 				return MvcHtmlString.Empty;
 
 			if (src.StartsWith("~/"))
-				src = src.Replace("~/", VirtualPathUtility.ToAbsolute("~"));
+				src = src.Replace("~/", VirtualPathUtility.ToAbsolute("~/"));
 
 			var tag = new TagBuilder("script");
 			tag.MergeAttribute("type", "text/javascript");
